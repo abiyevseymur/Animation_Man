@@ -1,0 +1,184 @@
+.human {
+    margin-left: 50px;
+}
+div .part1 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example;
+    animation-iteration-count: infinite;  
+    animation-duration: 2s;
+}
+div .part2 {
+    width:10px;
+    height: 100px;
+    background: black;
+    position: relative;  
+    
+    margin-left: 20px;
+    animation-name: body;
+    animation-iteration-count: infinite;        
+    animation-duration: 2s;
+}
+div .hand1 {
+    width: 10px;
+    height: 50px;
+    background: black;
+    border-radius: 30%;
+    animation-name: hand1;
+    position: relative;    
+    animation-iteration-count: infinite;        
+    animation-duration: 2s;
+}
+div .hand2 {
+    width: 10px;
+    height: 50px;
+    margin-top: -50px;
+    border-radius: 30%;
+    background: black;
+    animation-name: hand2;
+    position: relative;    
+    animation-iteration-count: infinite;        
+    animation-duration: 2s;
+}
+.arm1 {
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    top: 45;
+    border-radius: 30%;
+    animation-name: arm1;
+    animation-iteration-count:infinite;
+    animation-duration: 2s;   
+    transform-origin:top;    
+}
+.arm2 {
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    top: 45;
+    border-radius: 30%;   
+    transform: rotate(-25deg);
+    transform-origin:top;
+    
+}
+.foot1{
+     width: 10px;
+    height: 50px;
+    background: black;
+    border-radius: 30%;
+    animation-name: foot2;
+    position: relative;    
+    animation-iteration-count: infinite;        
+    animation-duration: 1.5s;
+}
+.foot2{
+    width: 10px;
+    height: 50px;
+    margin-top: -50px;
+    border-radius: 30%;
+    background: black;
+    animation-name: foot1;
+    position: relative;    
+    animation-iteration-count: infinite;        
+    animation-duration: 1.5s;
+}
+.leg1{
+    width: 10px;
+    height: 50px;
+    background: black;
+    position: absolute;
+    top: 45;
+    border-radius: 30px;
+    animation-name: leg1;
+    animation-iteration-count: infinite;        
+    animation-duration: 1.5s;
+    transform-origin:top;
+    
+}
+.leg2{
+    width: 10px;
+    height: 50px;
+    background: black;
+    position: absolute;
+    top: 45;
+    border-radius: 30px;
+    animation-name: leg2;
+    animation-iteration-count: infinite;        
+    animation-duration: 1.5s;
+    transform-origin:top;
+}
+.part4 {
+    margin-left: 20
+}
+.knife{
+    width: 7px;
+    height: 60px;
+    border: 1px solid black;
+    border-bottom-left-radius: 100%; 
+    position: absolute;
+    top: 80;   
+    left: 5;
+    transform-origin: top;
+    transform: rotate(-120deg);
+    
+    
+}
+@keyframes foot1{
+    0%{transform: rotate(15deg);transform-origin:top;}
+    50%{transform: rotate(0deg);transform-origin:top;}
+    100%{transform: rotate(15deg);transform-origin:top;}
+}
+@keyframes foot2{
+    0%{transform: rotate(-35deg);transform-origin:top;}
+    50%{transform: rotate(0deg);transform-origin:top;}
+    100%{transform: rotate(-35deg);transform-origin:top;}
+}
+@keyframes leg2{
+    0%{transform: rotate(25deg);}    
+    50%{transform: rotate(0deg);}    
+    100%{transform: rotate(25deg);}
+}
+@keyframes leg1{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(25deg);}
+    50%{transform: rotate(45eg);}
+    75%{transform: rotate(25deg);}
+    100%{transform: rotate(0deg);}    
+}
+@keyframes arm1{
+    0%{transform: rotate(-0deg);}
+    25%{transform: rotate(-15deg);}
+    50%{transform: rotate(-25deg);}
+    75%{transform: rotate(-15deg);}
+    100%{transform: rotate(-0deg);}
+}
+@keyframes hand2{
+     0%{transform: rotate(-35deg);transform-origin:top;}
+    50%{transform: rotate(0deg);transform-origin:top;}
+    100%{transform: rotate(-35deg);transform-origin:top;}
+}
+@keyframes hand1 {
+    0%{transform: rotate(45deg);transform-origin:top;}
+    50%{transform: rotate(0deg);transform-origin:top;}
+    100%{transform: rotate(45deg);transform-origin:top;}
+    
+}
+@keyframes body{
+    0%{left: 0;top: 0; }
+    25%{left:0; top: 1px;}
+    50%{left: 0px; top: 2px;}
+    75%{left: 0;top:1px;}
+    100%{left: 0px;top: 0px;}    
+}
+@keyframes example{
+    0%{left: 0;top: 0; }
+    25%{left:0; top: 1px;}
+    50%{left: 0px; top: 2px;}
+    75%{left: 0;top:1px;}
+    100%{left: 0px;top: 0px;} 
+}
